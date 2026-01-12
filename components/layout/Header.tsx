@@ -19,12 +19,12 @@ export default function Header() {
             onClick={() => setIsMenuOpen(false)}
           >
             <Image
-              src="/image.png"
+              src="/logo.png"
               alt="RideshareGuides"
-              width={32}
-              height={32}
+              width={0}
+              height={0}
+              sizes="100vw"
               className="h-8 w-auto"
-              unoptimized
             />
             <span className="hidden font-bold text-white sm:inline-block">
               RideshareGuides
