@@ -5,15 +5,31 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export default async function OpenGraphImage() {
-  const baseUrl = process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : "http://localhost:3000";
+  // Construct base URL more reliably
+  const baseUrl = process.env.NEXT_PUBLIC_URL
+    || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : null)
+    || "http://localhost:3000";
 
-  // Fetch the logo explicitly to ensure it's available for the generator
-  // This avoids potential issues with internal network routing for the edge function
-  const logoSrc = await fetch(new URL("/logo.png", baseUrl)).then((res) =>
-    res.arrayBuffer()
-  );
+  let logoSrc: ArrayBuffer | null = null;
+
+  try {
+    // Fetch the logo with timeout and error handling
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 3000);
+
+    const response = await fetch(`${baseUrl}/logo.png`, {
+      signal: controller.signal,
+    });
+
+    clearTimeout(timeoutId);
+
+    if (response.ok) {
+      logoSrc = await response.arrayBuffer();
+    }
+  } catch (error) {
+    console.error("Failed to fetch logo for OG image:", error);
+    // Continue without logo
+  }
 
   return new ImageResponse(
     (
@@ -32,15 +48,17 @@ export default async function OpenGraphImage() {
           textAlign: "center",
         }}
       >
-        {/* @ts-ignore - ImageResponse supports ArrayBuffer for src */}
-        <img 
-          src={logoSrc as any}
-          width="150"
-          height="75"
-          style={{ marginBottom: 40 }}
-        />
-        
-        <div style={{ fontSize: 30, fontWeight: 700, color: "#34d399", marginBottom: 20 }}>
+        {logoSrc && (
+          // @ts-ignore - ImageResponse supports ArrayBuffer for src
+          <img
+            src={logoSrc as any}
+            width="150"
+            height="75"
+            style={{ marginBottom: 40 }}
+          />
+        )}
+
+        <div style={{ fontSize: 30, fontWeight: 700, color: "#34d399", marginBottom: logoSrc ? 20 : 40 }}>
           RideshareGuides.com
         </div>
         <div style={{ fontSize: 80, fontWeight: 900, lineHeight: 1.05, marginBottom: 20 }}>

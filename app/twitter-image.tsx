@@ -5,13 +5,31 @@ export const size = { width: 1200, height: 600 };
 export const contentType = "image/png";
 
 export default async function TwitterImage() {
-  const baseUrl = process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : "http://localhost:3000";
+  // Construct base URL more reliably
+  const baseUrl = process.env.NEXT_PUBLIC_URL
+    || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : null)
+    || "http://localhost:3000";
 
-  const logoSrc = await fetch(new URL("/logo.png", baseUrl)).then((res) =>
-    res.arrayBuffer()
-  );
+  let logoSrc: ArrayBuffer | null = null;
+
+  try {
+    // Fetch the logo with timeout and error handling
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 3000);
+
+    const response = await fetch(`${baseUrl}/logo.png`, {
+      signal: controller.signal,
+    });
+
+    clearTimeout(timeoutId);
+
+    if (response.ok) {
+      logoSrc = await response.arrayBuffer();
+    }
+  } catch (error) {
+    console.error("Failed to fetch logo for Twitter image:", error);
+    // Continue without logo
+  }
 
   return new ImageResponse(
     (
@@ -30,13 +48,15 @@ export default async function TwitterImage() {
             textAlign: "center",
         }}
       >
-        {/* @ts-ignore */}
-        <img 
-          src={logoSrc as any}
-          width="120"
-          height="60"
-          style={{ marginBottom: 30 }}
-        />
+        {logoSrc && (
+          // @ts-ignore - ImageResponse supports ArrayBuffer for src
+          <img
+            src={logoSrc as any}
+            width="120"
+            height="60"
+            style={{ marginBottom: 30 }}
+          />
+        )}
         <div style={{ fontSize: 72, fontWeight: 900, lineHeight: 1.05, marginBottom: 20 }}>
           Keep 100% of Your Fares
         </div>
