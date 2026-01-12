@@ -17,11 +17,9 @@ export default function Header() {
             className="flex items-center"
             onClick={() => setIsMenuOpen(false)}
           >
-            <Image
+            <img
               src="/image.png"
               alt="RideshareGuides"
-              width={32}
-              height={32}
               className="h-8 w-auto"
             />
           </Link>
