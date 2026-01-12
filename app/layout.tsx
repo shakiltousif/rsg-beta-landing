@@ -4,8 +4,8 @@ import "./globals.css";
 
 const metadataBase = process.env.NEXT_PUBLIC_URL
 	? new URL(process.env.NEXT_PUBLIC_URL)
-	: process.env.VERCEL_URL
-		? new URL(`https://${process.env.VERCEL_URL}`)
+	: process.env.VERCEL_PROJECT_PRODUCTION_URL
+		? new URL(`https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`)
 		: new URL(`http://localhost:${process.env.PORT || 3000}`);
 
 const inter = Inter({
