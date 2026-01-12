@@ -54,7 +54,7 @@ export default function Hero() {
             asChild
             variant="outline"
             size="lg"
-            className="w-full sm:w-auto h-14 px-8 text-lg text-slate-300 border-slate-700 hover:bg-slate-800 hover:text-white rounded-full transition-all"
+            className="w-full sm:w-auto h-14 px-8 text-lg text-white border-slate-700 hover:bg-slate-800 hover:text-white rounded-full transition-all"
           >
             <Link href="#how-it-works">See How It Works</Link>
           </Button>
