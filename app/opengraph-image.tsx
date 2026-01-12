@@ -14,19 +14,30 @@ export default function OpenGraphImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          padding: 72,
+          alignItems: "center",
+          padding: 60,
           color: "#ffffff",
           backgroundColor: "#020617",
+          backgroundImage: "radial-gradient(circle at 50% 0%, #1e293b 0%, #020617 75%)",
+          textAlign: "center",
         }}
       >
-        <div style={{ fontSize: 30, fontWeight: 700, color: "#34d399" }}>
+        {/* Logo - fetching from live site which should be available after deployment */}
+        <img 
+          src="https://rsg-beta.vercel.app/logo.png"
+          width="150"
+          height="75"
+          style={{ marginBottom: 40 }}
+        />
+        
+        <div style={{ fontSize: 30, fontWeight: 700, color: "#34d399", marginBottom: 20 }}>
           RideshareGuides.com
         </div>
-        <div style={{ marginTop: 18, fontSize: 78, fontWeight: 900, lineHeight: 1.05 }}>
+        <div style={{ fontSize: 80, fontWeight: 900, lineHeight: 1.05, marginBottom: 20 }}>
           Keep 100% of Your Fares
         </div>
-	        <div style={{ marginTop: 18, fontSize: 30, color: "#e2e8f0", lineHeight: 1.25 }}>
-	          Direct booking tools for NYC TLC drivers - $15/week - 0% commission
+	        <div style={{ fontSize: 32, color: "#e2e8f0", lineHeight: 1.4, maxWidth: 900 }}>
+	          Direct booking tools for TLC drivers • $15/week • 0% commission
 	        </div>
       </div>
     ),

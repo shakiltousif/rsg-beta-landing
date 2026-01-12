@@ -14,18 +14,27 @@ export default function TwitterImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          padding: 64,
+          alignItems: "center",
+          padding: 60,
 	          color: "#ffffff",
 	          backgroundColor: "#020617",
+            backgroundImage: "radial-gradient(circle at 50% 0%, #1e293b 0%, #020617 75%)",
+            textAlign: "center",
         }}
       >
-        <div style={{ fontSize: 64, fontWeight: 900, lineHeight: 1.05 }}>
+        <img 
+          src="https://rsg-beta.vercel.app/logo.png"
+          width="120"
+          height="60"
+          style={{ marginBottom: 30 }}
+        />
+        <div style={{ fontSize: 72, fontWeight: 900, lineHeight: 1.05, marginBottom: 20 }}>
           Keep 100% of Your Fares
         </div>
-        <div style={{ marginTop: 16, fontSize: 28, color: "rgba(226,232,240,0.92)" }}>
+        <div style={{ fontSize: 32, color: "rgba(226,232,240,0.92)", marginBottom: 10 }}>
           RideshareGuides.com — NYC TLC drivers
         </div>
-        <div style={{ marginTop: 34, fontSize: 22, color: "rgba(148,163,184,0.92)" }}>
+        <div style={{ fontSize: 26, color: "rgba(148,163,184,0.92)" }}>
           $15/week • $0 commission • Direct bookings
         </div>
       </div>
