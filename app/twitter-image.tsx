@@ -4,7 +4,15 @@ export const runtime = "edge";
 export const size = { width: 1200, height: 600 };
 export const contentType = "image/png";
 
-export default function TwitterImage() {
+export default async function TwitterImage() {
+  const baseUrl = process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : "http://localhost:3000";
+
+  const logoSrc = await fetch(new URL("/logo.png", baseUrl)).then((res) =>
+    res.arrayBuffer()
+  );
+
   return new ImageResponse(
     (
       <div
@@ -22,8 +30,9 @@ export default function TwitterImage() {
             textAlign: "center",
         }}
       >
+        {/* @ts-ignore */}
         <img 
-          src="https://rsg-beta.vercel.app/logo.png"
+          src={logoSrc as any}
           width="120"
           height="60"
           style={{ marginBottom: 30 }}

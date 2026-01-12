@@ -4,7 +4,17 @@ export const runtime = "edge";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default function OpenGraphImage() {
+export default async function OpenGraphImage() {
+  const baseUrl = process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : "http://localhost:3000";
+
+  // Fetch the logo explicitly to ensure it's available for the generator
+  // This avoids potential issues with internal network routing for the edge function
+  const logoSrc = await fetch(new URL("/logo.png", baseUrl)).then((res) =>
+    res.arrayBuffer()
+  );
+
   return new ImageResponse(
     (
       <div
@@ -22,9 +32,9 @@ export default function OpenGraphImage() {
           textAlign: "center",
         }}
       >
-        {/* Logo - fetching from live site which should be available after deployment */}
+        {/* @ts-ignore - ImageResponse supports ArrayBuffer for src */}
         <img 
-          src="https://rsg-beta.vercel.app/logo.png"
+          src={logoSrc as any}
           width="150"
           height="75"
           style={{ marginBottom: 40 }}
