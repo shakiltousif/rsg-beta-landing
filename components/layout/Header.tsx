@@ -14,17 +14,16 @@ export default function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center space-x-2"
+            className="flex items-center"
             onClick={() => setIsMenuOpen(false)}
           >
-            <img
+            <Image
               src="/image.png"
               alt="RideshareGuides"
+              width={32}
+              height={32}
               className="h-8 w-auto"
             />
-            <span className="hidden font-bold text-white sm:inline-block">
-              RideshareGuides
-            </span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -79,38 +78,38 @@ export default function Header() {
 
       {/* Mobile Menu Overlay */}
       {isMenuOpen && (
-        <div className="absolute top-16 left-0 w-full border-b border-slate-800 bg-slate-900 px-4 py-4 shadow-xl md:hidden">
-          <nav className="flex flex-col space-y-4">
+        <div className="fixed inset-0 top-16 z-50 h-[calc(100vh-4rem)] w-full border-t border-slate-800 bg-slate-900 px-6 py-8 shadow-xl overflow-y-auto md:hidden">
+          <nav className="flex flex-col space-y-6">
             <Link
               href="#features"
-              className="block text-base font-medium text-slate-300 hover:text-white"
+              className="block text-lg font-medium text-slate-300 hover:text-white"
               onClick={() => setIsMenuOpen(false)}
             >
               Features
             </Link>
             <Link
               href="#pricing"
-              className="block text-base font-medium text-slate-300 hover:text-white"
+              className="block text-lg font-medium text-slate-300 hover:text-white"
               onClick={() => setIsMenuOpen(false)}
             >
               Pricing
             </Link>
             <Link
               href="#faq"
-              className="block text-base font-medium text-slate-300 hover:text-white"
+              className="block text-lg font-medium text-slate-300 hover:text-white"
               onClick={() => setIsMenuOpen(false)}
             >
               FAQ
             </Link>
             <Link
               href="/login"
-              className="block text-base font-medium text-slate-300 hover:text-white"
+              className="block text-lg font-medium text-slate-300 hover:text-white"
               onClick={() => setIsMenuOpen(false)}
             >
               Login
             </Link>
-            <div className="pt-2">
-              <Button asChild size="lg" className="w-full bg-emerald-500 hover:bg-emerald-600">
+            <div className="pt-4">
+              <Button asChild size="lg" className="w-full bg-emerald-500 hover:bg-emerald-600 text-lg h-12">
                 <Link href="/beta" onClick={() => setIsMenuOpen(false)}>Join Beta</Link>
               </Button>
             </div>

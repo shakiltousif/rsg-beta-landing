@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-slate-950 pt-20 pb-32 lg:pt-32 lg:pb-40">
+    <section className="relative overflow-hidden bg-slate-950 pt-24 pb-20 lg:pt-32 lg:pb-40">
       {/* Modern Gradient Background */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-900 via-[#020617] to-black" />
       
@@ -26,7 +26,7 @@ export default function Hero() {
         </div>
 
         {/* Main Headline */}
-        <h1 className="mx-auto mb-8 max-w-5xl text-5xl font-bold tracking-tight text-white md:text-7xl lg:text-8xl">
+        <h1 className="mx-auto mb-8 max-w-5xl text-4xl font-bold tracking-tight text-white md:text-7xl lg:text-8xl">
           The Reservation Tool
           <span className="block mt-2 bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">
             Drivers Built for Drivers
@@ -46,7 +46,7 @@ export default function Hero() {
           <Button
             asChild
             size="lg"
-            className="h-14 px-8 text-lg font-semibold bg-emerald-600 hover:bg-emerald-500 text-white shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all hover:shadow-[0_0_30px_rgba(16,185,129,0.5)] rounded-full"
+            className="w-full sm:w-auto h-14 px-8 text-lg font-semibold bg-emerald-600 hover:bg-emerald-500 text-white shadow-[0_0_20px_rgba(16,185,129,0.3)] transition-all hover:shadow-[0_0_30px_rgba(16,185,129,0.5)] rounded-full"
           >
             <Link href="/beta">Join the Beta Access</Link>
           </Button>
@@ -54,7 +54,7 @@ export default function Hero() {
             asChild
             variant="outline"
             size="lg"
-            className="h-14 px-8 text-lg text-slate-300 border-slate-700 hover:bg-slate-800 hover:text-white rounded-full transition-all"
+            className="w-full sm:w-auto h-14 px-8 text-lg text-slate-300 border-slate-700 hover:bg-slate-800 hover:text-white rounded-full transition-all"
           >
             <Link href="#how-it-works">See How It Works</Link>
           </Button>
@@ -62,15 +62,15 @@ export default function Hero() {
 
         {/* Stats - Floating Cards Effect */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-          <div className="group rounded-2xl border border-slate-800 bg-slate-900/50 p-6 backdrop-blur-sm transition-all hover:border-emerald-500/30 hover:bg-slate-900/80">
+          <div className="group rounded-2xl border border-slate-800 bg-slate-900/50 p-5 md:p-6 backdrop-blur-sm transition-all hover:border-emerald-500/30 hover:bg-slate-900/80">
             <div className="text-4xl font-bold text-emerald-400 mb-1 group-hover:scale-110 transition-transform duration-300">$0</div>
             <div className="text-slate-400 font-medium">Platform Commission</div>
           </div>
-          <div className="group rounded-2xl border border-slate-800 bg-slate-900/50 p-6 backdrop-blur-sm transition-all hover:border-emerald-500/30 hover:bg-slate-900/80">
+          <div className="group rounded-2xl border border-slate-800 bg-slate-900/50 p-5 md:p-6 backdrop-blur-sm transition-all hover:border-emerald-500/30 hover:bg-slate-900/80">
             <div className="text-4xl font-bold text-white mb-1 group-hover:scale-110 transition-transform duration-300">$15</div>
             <div className="text-slate-400 font-medium">Flat Weekly Rate</div>
           </div>
-          <div className="group rounded-2xl border border-slate-800 bg-slate-900/50 p-6 backdrop-blur-sm transition-all hover:border-emerald-500/30 hover:bg-slate-900/80">
+          <div className="group rounded-2xl border border-slate-800 bg-slate-900/50 p-5 md:p-6 backdrop-blur-sm transition-all hover:border-emerald-500/30 hover:bg-slate-900/80">
             <div className="text-4xl font-bold text-emerald-400 mb-1 group-hover:scale-110 transition-transform duration-300">100%</div>
             <div className="text-slate-400 font-medium">Keep Your Fares</div>
           </div>

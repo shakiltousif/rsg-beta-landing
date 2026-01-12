@@ -1,6 +1,6 @@
 export default function Features() {
   return (
-    <section id="features" className="bg-slate-950 py-24 text-white relative overflow-hidden">
+    <section id="features" className="bg-slate-950 py-16 md:py-24 text-white relative overflow-hidden">
        {/* Background Elements */}
        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent opacity-20" />
        
@@ -18,7 +18,7 @@ export default function Features() {
         <div className="grid grid-cols-1 md:grid-cols-6 gap-6 max-w-7xl mx-auto">
           
           {/* Feature 1 - Large Span */}
-          <div className="md:col-span-4 group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 transition-all hover:bg-white/10">
+          <div className="md:col-span-4 group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8 transition-all hover:bg-white/10">
             <div className="absolute top-0 right-0 -mt-4 -mr-4 h-24 w-24 rounded-full bg-emerald-500/20 blur-2xl group-hover:bg-emerald-500/30 transition-all" />
             
             <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-500/20 text-emerald-400">
@@ -33,7 +33,7 @@ export default function Features() {
           </div>
 
           {/* Feature 2 - Small Span */}
-          <div className="md:col-span-2 group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 transition-all hover:bg-white/10">
+          <div className="md:col-span-2 group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8 transition-all hover:bg-white/10">
             <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-purple-500/20 text-purple-400">
                <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -46,7 +46,7 @@ export default function Features() {
           </div>
 
           {/* Feature 3 - Small Span */}
-          <div className="md:col-span-2 group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 transition-all hover:bg-white/10">
+          <div className="md:col-span-2 group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8 transition-all hover:bg-white/10">
             <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500/20 text-blue-400">
               <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" />
@@ -59,7 +59,7 @@ export default function Features() {
           </div>
 
           {/* Feature 4 - Large Span */}
-          <div className="md:col-span-4 group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 transition-all hover:bg-white/10">
+          <div className="md:col-span-4 group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8 transition-all hover:bg-white/10">
              <div className="absolute top-0 right-0 -mt-4 -mr-4 h-24 w-24 rounded-full bg-emerald-500/20 blur-2xl group-hover:bg-emerald-500/30 transition-all" />
              
             <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-orange-500/20 text-orange-400">
@@ -74,7 +74,7 @@ export default function Features() {
           </div>
 
           {/* Feature 5 - Medium Span */}
-          <div className="md:col-span-3 group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 transition-all hover:bg-white/10">
+          <div className="md:col-span-3 group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8 transition-all hover:bg-white/10">
             <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-pink-500/20 text-pink-400">
               <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
@@ -87,7 +87,7 @@ export default function Features() {
           </div>
 
            {/* Feature 6 - Medium Span */}
-           <div className="md:col-span-3 group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-8 transition-all hover:bg-white/10">
+           <div className="md:col-span-3 group relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 md:p-8 transition-all hover:bg-white/10">
             <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-teal-500/20 text-teal-400">
               <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
@@ -102,7 +102,7 @@ export default function Features() {
         </div>
 
         {/* Bottom Feature Highlight */}
-        <div className="mt-12 mx-auto max-w-3xl text-center rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-8 backdrop-blur-sm">
+        <div className="mt-12 mx-auto max-w-3xl text-center rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-6 md:p-8 backdrop-blur-sm">
           <h3 className="mb-2 text-2xl font-bold text-emerald-400">Zero App Friction</h3>
           <p className="text-lg text-slate-300">
             Clients don't need to download an app. They book through a simple, beautiful web link that works on any phone.

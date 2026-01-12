@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="bg-slate-50 py-24 relative overflow-hidden">
+    <section id="pricing" className="bg-slate-50 py-16 md:py-24 relative overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
           <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-emerald-500/5 blur-[100px] rounded-full translate-x-1/2 -translate-y-1/2" />
@@ -24,7 +24,7 @@ export default function Pricing() {
         <div className="grid gap-8 lg:grid-cols-3 max-w-7xl mx-auto items-start">
           
           {/* Beta Plan */}
-          <div className="group relative rounded-3xl bg-white p-8 shadow-xl shadow-slate-200/50 border border-slate-100 transition-all hover:-translate-y-1 hover:shadow-2xl">
+          <div className="group relative rounded-3xl bg-white p-6 md:p-8 shadow-xl shadow-slate-200/50 border border-slate-100 transition-all hover:-translate-y-1 hover:shadow-2xl">
             <div className="mb-6">
               <span className="inline-block rounded-full bg-emerald-100 px-3 py-1 text-xs font-bold uppercase tracking-wider text-emerald-600">
                 Limited Time
@@ -63,7 +63,7 @@ export default function Pricing() {
           </div>
 
           {/* Founding Member Plan (Highlighted) */}
-          <div className="relative rounded-3xl bg-slate-900 p-8 shadow-2xl shadow-purple-500/20 border border-slate-800 transform md:-translate-y-4 z-10">
+          <div className="relative rounded-3xl bg-slate-900 p-6 md:p-8 shadow-2xl shadow-purple-500/20 border border-slate-800 transform md:-translate-y-4 z-10">
              {/* Gradient Border Effect */}
             <div className="absolute inset-0 -z-10 bg-gradient-to-b from-purple-500 to-pink-500 rounded-3xl opacity-10 blur-xl" />
             
@@ -108,7 +108,7 @@ export default function Pricing() {
           </div>
 
           {/* Professional Plan */}
-          <div className="group relative rounded-3xl bg-white p-8 shadow-xl shadow-slate-200/50 border border-slate-100 transition-all hover:-translate-y-1 hover:shadow-2xl">
+          <div className="group relative rounded-3xl bg-white p-6 md:p-8 shadow-xl shadow-slate-200/50 border border-slate-100 transition-all hover:-translate-y-1 hover:shadow-2xl">
             <div className="mb-6">
                <span className="inline-block rounded-full bg-slate-100 px-3 py-1 text-xs font-bold uppercase tracking-wider text-slate-600">
                 Standard
