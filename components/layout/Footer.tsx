@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,12 +8,16 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-4">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-500">
-                <span className="text-lg font-bold text-white">R</span>
-              </div>
+            <Link href="/" className="flex items-center space-x-2 w-fit">
+              <Image
+                src="/logo.png"
+                alt="RideshareGuides Logo"
+                width={40}
+                height={40}
+                className="h-10 w-auto"
+              />
               <span className="font-bold text-white">RideshareGuides</span>
-            </div>
+            </Link>
             <p className="text-sm text-slate-400">
               The reservation tool built by drivers, for drivers.
             </p>
