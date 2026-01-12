@@ -12,14 +12,16 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
-          <Link 
-            href="/" 
+          <Link
+            href="/"
             className="flex items-center space-x-2"
             onClick={() => setIsMenuOpen(false)}
           >
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-500">
-              <span className="text-lg font-bold text-white">R</span>
-            </div>
+            <img
+              src="/image.png"
+              alt="RideshareGuides"
+              className="h-8 w-auto"
+            />
             <span className="hidden font-bold text-white sm:inline-block">
               RideshareGuides
             </span>
