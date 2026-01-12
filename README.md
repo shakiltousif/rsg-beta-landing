@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RideshareGuides.com Landing Page
 
-## Getting Started
+A Next.js 15 landing page for RideshareGuides.com - the reservation tool built by drivers, for drivers.
 
-First, run the development server:
+## 🚀 Quick Start
 
 ```bash
+# Install dependencies (if not already done)
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the landing page.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/
+├── (marketing)/          # Marketing pages with header/footer
+│   ├── layout.tsx       # Marketing layout
+│   └── page.tsx         # Landing page
+├── (auth)/              # Authentication pages
+├── dashboard/           # Protected driver dashboard
+├── api/                 # API routes
+├── actions/             # Server Actions
+├── layout.tsx           # Root layout
+└── globals.css          # Global styles
 
-## Learn More
+components/
+├── ui/                  # shadcn/ui components
+├── layout/              # Header, Footer
+├── sections/            # Landing page sections
+└── forms/               # Form components
 
-To learn more about Next.js, take a look at the following resources:
+lib/
+├── utils.ts             # Utility functions
+└── supabase/            # Supabase client configuration
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Framework**: Next.js 16.1.1 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS v4
+- **UI Components**: shadcn/ui
+- **Forms**: React Hook Form + Zod
+- **Database**: Supabase
+- **Payments**: Stripe
+- **Deployment**: Vercel
 
-## Deploy on Vercel
+## 🔧 Environment Variables
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Create a `.env.local` file based on `.env.local.example`:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```env
+NEXT_PUBLIC_URL=http://localhost:3000
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+STRIPE_SECRET_KEY=your_stripe_secret_key
+# ... see .env.local.example for full list
+```
+
+## 📝 Key Features
+
+- ✅ Server Components by default (optimal performance)
+- ✅ SEO optimized with metadata API
+- ✅ Responsive design (mobile-first)
+- ✅ Type-safe with TypeScript
+- ✅ Form validation with Zod
+- ✅ Server Actions for data mutations
+
+## 🎯 Landing Page Sections
+
+1. **Hero** - Main value proposition with CTAs ✅
+2. **Problem/Solution** - Uber vs RideshareGuides comparison ✅
+3. **Features** - Key platform features (pending)
+4. **How It Works** - 3-step process (pending)
+5. **Testimonials** - Driver testimonials (pending)
+6. **Pricing** - Beta vs Professional plans (pending)
+7. **FAQ** - Common questions (pending)
+8. **Final CTA** - Join beta call-to-action (pending)
+
+## 📚 Documentation
+
+- See `../TECHNICAL_PLAN.md` for comprehensive technical specifications
+- See `../BUILD_PROGRESS.md` for current build status
+
+---
+
+Built with ❤️ by drivers, for drivers.
