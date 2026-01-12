@@ -56,6 +56,11 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
   openGraph: {
     title: "RideshareGuides | Keep 100% of Your Fares",
     description: "The professional reservation tool built by drivers, for drivers. Build your client base, set rates, and stop paying commissions.",
