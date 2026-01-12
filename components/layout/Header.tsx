@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 export default function Header() {
@@ -14,14 +15,20 @@ export default function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="flex items-center"
+            className="flex items-center space-x-2"
             onClick={() => setIsMenuOpen(false)}
           >
-            <img
+            <Image
               src="/image.png"
               alt="RideshareGuides"
+              width={32}
+              height={32}
               className="h-8 w-auto"
+              unoptimized
             />
+            <span className="hidden font-bold text-white sm:inline-block">
+              RideshareGuides
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
