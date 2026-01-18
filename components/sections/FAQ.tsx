@@ -44,7 +44,7 @@ export default function FAQ() {
     {
       question: "Is The Don Reservations a rideshare company?",
       answer:
-        "No. We're a B2B software platform that provides booking tools for independent transportation providers. We don't provide rides, employ drivers, or take commission. You're an independent business owner using our software to manage your bookings.",
+        "No, The Don Reservations isn't a rideshare company—it's RSG Network, a professional driver's platform. We're a community where serious drivers connect, strategize, and elevate their game. But here's what sets us apart: RSG members get exclusive access to The Don Reservations, a Driver-Owned Network reservation system. This is for pros who want to build a real transportation business, not just chase pings.",
     },
     {
       question: "How many bookings do I need to break even?",
