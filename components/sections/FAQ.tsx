@@ -44,7 +44,17 @@ export default function FAQ() {
     {
       question: "Is The Don Reservations a rideshare company?",
       answer:
-        "No, The Don Reservations isn't a rideshare company—it's RSG Network, a professional driver's platform. We're a community where serious drivers connect, strategize, and elevate their game. But here's what sets us apart: RSG members get exclusive access to The Don Reservations, a Driver-Owned Network reservation system. This is for pros who want to build a real transportation business, not just chase pings.",
+        "No. We're a B2B software platform that provides booking tools for independent transportation providers. We don't provide rides, employ drivers, or take commission. You're an independent business owner using our software to manage your bookings.",
+    },
+    {
+      question: "Is RideshareGuides a rideshare company?",
+      answer:
+        "RideshareGuides isn't a rideshare company—it's RSG Network, a professional driver's platform. We're a community where serious drivers connect, strategize, and elevate their game. But here's what sets us apart: RSG members get exclusive access to The Don Reservations, driver-owned network reservation system. This is for pros who want to build a real transportation business, not just chase pings.",
+    },
+    {
+      question: "How many bookings do I need to break even?",
+      answer:
+        "With Professional tier at $12-15/week, you break even with just ONE direct booking instead of an Uber ride. Example: A $50 Uber ride where you'd keep $35 (after 30% fee) vs. keeping full $50 direct. That $15 difference covers your weekly subscription. Every booking after that is pure profit. FREE tier starts earning immediately with just 1-2 rides per month.",
     },
     {
       question: "How many bookings do I need to break even?",

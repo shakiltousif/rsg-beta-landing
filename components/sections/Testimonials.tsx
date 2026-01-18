@@ -11,14 +11,14 @@ export default function Testimonials() {
       name: "Carlos R.",
       role: "Black Car Driver, Manhattan",
       years: "12 years experience",
-      quote: "The QR code business card is genius. I leave it in the car, riders scan it, and they book me next time. Built 50+ regular clients in 2 months.",
+      quote: "The RSG Digital Business QR code card is genius. I leave it in the car, riders scan it, and they book me as their personal driver with The Don Reservation using my personal driver ID #, and they book me next time. Built 50+ regular clients in 2 months.",
       rating: 5,
     },
     {
       name: "David L.",
       role: "TLC Driver, Brooklyn",
       years: "5 years experience",
-      quote: "Finally, a platform that treats drivers like business owners, not employees. $12/week (beta pricing) is nothing compared to what I was losing to Uber.",
+      quote: "Finally, a platform that treats drivers like business owners, not employees. $12/week (beta pricing) is nothing compared to what I was losing to Uber/Lyft.",
       rating: 5,
     },
   ];
