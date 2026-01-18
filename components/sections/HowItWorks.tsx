@@ -4,10 +4,10 @@ export default function HowItWorks() {
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-4xl text-center mb-16">
           <h2 className="mb-4 text-3xl font-bold tracking-tight text-slate-900 md:text-5xl">
-            Get Started in <span className="text-emerald-500">3 Simple Steps</span>
+            Start Earning in <span className="text-emerald-500">3 Simple Steps</span>
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-slate-600">
-            We've made it easy for TLC drivers to start building their own book of business.
+            Join the platform designed for commercial insurance drivers and keep 100% of your fares.
           </p>
         </div>
 
@@ -24,23 +24,23 @@ export default function HowItWorks() {
               </div>
               <div className="rounded-2xl border border-slate-100 bg-white p-8 shadow-lg shadow-slate-200/50 transition-all hover:-translate-y-1 hover:shadow-xl">
                 <h3 className="mb-3 text-2xl font-bold text-slate-900">
-                  Sign Up & Verify
+                  Sign Up on RSG
                 </h3>
                 <p className="mb-6 text-slate-600 leading-relaxed">
-                  Join the beta with your TLC license. We verify your credentials and insurance to ensure the highest quality network.
+                  Create your free account to access the driver reservation platform. Quick and simple registration process.
                 </p>
                 <ul className="space-y-3 text-sm text-slate-500">
                   <li className="flex items-center gap-3">
                     <div className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                    <span>Upload TLC/commercial license</span>
+                    <span>Enter your basic information</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <div className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                     <span>Verify commercial insurance</span>
+                    <span>Create your secure account</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <div className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                     <span>Approval within 24 hours</span>
+                    <span>Access the driver dashboard</span>
                   </li>
                 </ul>
               </div>
@@ -53,23 +53,29 @@ export default function HowItWorks() {
               </div>
               <div className="rounded-2xl border border-slate-100 bg-white p-8 shadow-lg shadow-slate-200/50 transition-all hover:-translate-y-1 hover:shadow-xl">
                 <h3 className="mb-3 text-2xl font-bold text-slate-900">
-                  Set Up Your Profile
+                  Apply for The Don Reservations
                 </h3>
+                <div className="mb-4 inline-flex items-center gap-2 rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800">
+                  <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                  </svg>
+                  Commercial Insurance Drivers Only
+                </div>
                 <p className="mb-6 text-slate-600 leading-relaxed">
-                  Create your professional driver profile. Add your photo, vehicle details, and customize your service rates.
+                  Submit your application for The Don Reservations. Required for commercial vehicle operation.
                 </p>
                 <ul className="space-y-3 text-sm text-slate-500">
                    <li className="flex items-center gap-3">
                     <div className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                     <span>Add your photo and bio</span>
+                    <span>Submit The Don application</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <div className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                     <span>Set your service rates</span>
+                    <span>Provide commercial insurance proof</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <div className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                     <span>Get your QR business card</span>
+                    <span>Verify driver credentials</span>
                   </li>
                 </ul>
               </div>
@@ -82,23 +88,23 @@ export default function HowItWorks() {
               </div>
               <div className="rounded-2xl border border-slate-100 bg-white p-8 shadow-lg shadow-slate-200/50 transition-all hover:-translate-y-1 hover:shadow-xl">
                 <h3 className="mb-3 text-2xl font-bold text-slate-900">
-                  Start Earning
+                  Wait & Get Approved
                 </h3>
                 <p className="mb-6 text-slate-600 leading-relaxed">
-                  Share your booking link, accept requests on your own terms, and get paid 100% of the fare directly.
+                  Our team reviews your application. Once approved, you'll have full access to start earning immediately.
                 </p>
                 <ul className="space-y-3 text-sm text-slate-500">
                    <li className="flex items-center gap-3">
                     <div className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                     <span>Share QR code with riders</span>
+                    <span>Wait 24-48 hours for approval</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <div className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                     <span>Receive booking notifications</span>
+                    <span>Receive approval notification</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <div className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-                     <span>Get paid directly by clients</span>
+                    <span>Start earning 100% of fares</span>
                   </li>
                 </ul>
               </div>

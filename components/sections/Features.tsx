@@ -100,14 +100,6 @@ export default function Features() {
           </div>
 
         </div>
-
-        {/* Bottom Feature Highlight */}
-        <div className="mt-12 mx-auto max-w-3xl text-center rounded-2xl border border-emerald-500/20 bg-emerald-500/5 p-6 md:p-8 backdrop-blur-sm">
-          <h3 className="mb-2 text-2xl font-bold text-emerald-400">Zero App Friction</h3>
-          <p className="text-lg text-slate-300">
-            Clients don't need to download an app. They book through a simple, beautiful web link that works on any phone.
-          </p>
-        </div>
       </div>
     </section>
   );

@@ -33,7 +33,7 @@ export default function FinalCTA() {
 
           {/* Subheadline */}
           <p className="mx-auto mb-10 max-w-2xl text-xl text-slate-300 md:text-2xl leading-relaxed">
-            Join professional NYC drivers who are building their own business, not just driving for an app.
+            Join professional drivers worldwide who are building their own business, not just driving for an app.
           </p>
 
           {/* Benefits List */}
@@ -52,7 +52,7 @@ export default function FinalCTA() {
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                 </svg>
               </div>
-              <span>Setup in 5 Minutes</span>
+              <span>Apply within 5 minutes</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-400">

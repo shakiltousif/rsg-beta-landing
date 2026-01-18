@@ -20,14 +20,14 @@ export default function Header() {
           >
             <Image
               src="/logo.png"
-              alt="RideshareGuides"
+              alt="The Don Reservations"
               width={0}
               height={0}
               sizes="100vw"
               className="h-8 w-auto"
             />
             <span className="hidden font-bold text-white sm:inline-block">
-              RideshareGuides
+              The Don Reservations
             </span>
           </Link>
 

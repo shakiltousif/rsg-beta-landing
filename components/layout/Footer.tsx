@@ -11,12 +11,12 @@ export default function Footer() {
             <Link href="/" className="flex items-center space-x-2 w-fit">
               <Image
                 src="/logo.png"
-                alt="RideshareGuides Logo"
+                alt="The Don Reservations Logo"
                 width={40}
                 height={40}
                 className="h-10 w-auto"
               />
-              <span className="font-bold text-white">RideshareGuides</span>
+              <span className="font-bold text-white">The Don Reservations</span>
             </Link>
             <p className="text-sm text-slate-400">
               The reservation tool built by drivers, for drivers.
@@ -84,10 +84,10 @@ export default function Footer() {
         <div className="mt-12 border-t border-slate-800 pt-8">
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <p className="text-sm text-slate-400">
-              © {new Date().getFullYear()} RideshareGuides.com. All rights reserved.
+              © {new Date().getFullYear()} The Don Reservations. All rights reserved.
             </p>
             <p className="text-xs text-slate-500 text-center md:text-right max-w-2xl">
-              RideshareGuides.com is a technology platform connecting clients with independent 
+              The Don Reservations is a technology platform connecting clients with independent 
               transportation service providers. We do not provide transportation services. All 
               drivers are independent businesses responsible for their own insurance, licensing, 
               and operations.

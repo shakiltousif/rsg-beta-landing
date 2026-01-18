@@ -18,7 +18,7 @@ export default function Testimonials() {
       name: "David L.",
       role: "TLC Driver, Brooklyn",
       years: "5 years experience",
-      quote: "Finally, a platform that treats drivers like business owners, not employees. $15/week is nothing compared to what I was losing to Uber.",
+      quote: "Finally, a platform that treats drivers like business owners, not employees. $12/week (beta pricing) is nothing compared to what I was losing to Uber.",
       rating: 5,
     },
   ];
@@ -37,7 +37,7 @@ export default function Testimonials() {
               Trusted by <span className="text-emerald-500">Professional Drivers</span>
             </h2>
             <p className="mx-auto max-w-2xl text-lg text-slate-400">
-              Join hundreds of NYC drivers who are taking back control of their income.
+              Join hundreds of professional drivers who are taking back control of their income and building their own clientele.
             </p>
           </div>
 

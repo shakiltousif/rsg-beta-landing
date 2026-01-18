@@ -133,10 +133,19 @@ export default function TermsPage() {
 
             <h3>6.1 Subscription Fees</h3>
             <p>
-              RideshareGuides charges a flat weekly subscription fee of $15 (the "Subscription Fee"). By subscribing, you agree to:
+              RideshareGuides offers multiple pricing tiers:
             </p>
             <ul>
-              <li>Pay the Subscription Fee on a recurring weekly basis</li>
+              <li><strong>FREE Tier:</strong> $0/month, 12% commission per completed ride</li>
+              <li><strong>Professional Tier:</strong> $12-15/week ($55-60/month), 0% commission</li>
+              <li><strong>Elite Tier:</strong> $28-35/week ($112-140/month), 0% commission with fleet features</li>
+              <li>Beta Founding Members receive locked-in pricing ($12/$28 per week)</li>
+            </ul>
+            <p>
+              By subscribing, you agree to:
+            </p>
+            <ul>
+              <li>Pay Subscription Fee on a recurring weekly basis</li>
               <li>Authorize automatic payment from your designated payment method</li>
               <li>Accept that fees are non-refundable except as required by law</li>
             </ul>

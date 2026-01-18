@@ -67,8 +67,8 @@ export default function Hero() {
             <div className="text-slate-400 font-medium">Platform Commission</div>
           </div>
           <div className="group rounded-2xl border border-slate-800 bg-slate-900/50 p-5 md:p-6 backdrop-blur-sm transition-all hover:border-emerald-500/30 hover:bg-slate-900/80">
-            <div className="text-4xl font-bold text-white mb-1 group-hover:scale-110 transition-transform duration-300">$15</div>
-            <div className="text-slate-400 font-medium">Flat Weekly Rate</div>
+            <div className="text-4xl font-bold text-white mb-1 group-hover:scale-110 transition-transform duration-300">$12-15</div>
+            <div className="text-slate-400 font-medium">Weekly for Professional</div>
           </div>
           <div className="group rounded-2xl border border-slate-800 bg-slate-900/50 p-5 md:p-6 backdrop-blur-sm transition-all hover:border-emerald-500/30 hover:bg-slate-900/80">
             <div className="text-4xl font-bold text-emerald-400 mb-1 group-hover:scale-110 transition-transform duration-300">100%</div>

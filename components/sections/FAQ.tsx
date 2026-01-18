@@ -14,47 +14,42 @@ export default function FAQ() {
     {
       question: "Is commercial insurance required?",
       answer:
-        "Absolutely. All drivers must have active commercial auto insurance with minimum $1M liability coverage. This is non-negotiable and protects both you and your clients. We verify insurance during the approval process.",
+        "Absolutely. All drivers must have active commercial auto insurance with minimum $1M liability coverage (or state minimum requirements, whichever is higher). This is non-negotiable and protects both you and your clients. We verify insurance during approval process.",
     },
     {
       question: "How do I get paid?",
       answer:
-        "Clients pay you directly using their preferred method: cash, Venmo, Zelle, CashApp, or any payment method you accept. RideshareGuides never touches your money - you keep 100% of every fare.",
+        "Clients pay you directly through Stripe. RideshareGuides never touches your money - you keep 100% of every fare.",
     },
     {
       question: "What's the difference between this and Uber?",
       answer:
-        "Uber takes 25-30% commission and controls pricing. RideshareGuides charges a flat $15/week subscription with 0% commission. You set your own rates, build direct client relationships, and keep 100% of what you earn. We're a tool for your business, not your employer.",
+        "Uber takes 25-30% commission and controls pricing. The Don Reservations offers FREE tier (12% commission) or Professional tier ($12-15/week with 0% commission). You set your own rates, build direct client relationships, and keep 100% of what you earn. We're a tool for your business, not your employer.",
     },
     {
       question: "Can I use this alongside Uber/Lyft?",
       answer:
-        "Absolutely! Many drivers use RideshareGuides to build their own client base while still taking app rides during slow times. The goal is to gradually replace app income with direct bookings where you keep 100%.",
+        "Absolutely! Many drivers use The Done Reservations to build their own client base while still taking app rides during slow times. The goal is to gradually replace app income with direct bookings where you keep 100%.",
     },
     {
-      question: "How does the digital business card work?",
+      question: "How does digital business card work?",
       answer:
-        "You get a free QR code business card that riders can scan to save your booking link. Leave it in your car, and satisfied riders can book you directly next time instead of using Uber. It's a simple way to convert one-time riders into repeat clients.",
+        "You get a free RSG DIGITAL BUSINESS QR CODE that riders can scan to save your booking link. Leave it in your car, and satisfied riders can book you directly next time instead of using Uber. It's a simple way to convert one-time riders into repeat clients.",
     },
     {
-      question: "What happens after the 30-day free trial?",
+      question: "What happens after 30-day free trial?",
       answer:
-        "After 30 days, you'll be charged $15/week (or $10/week if you're a Founding Member). You can cancel anytime with no penalties. If you cancel, you simply lose access to the booking platform, but you keep all client contact information you've collected.",
+        "After 30 days, choose your plan: FREE ($0/month, 12% commission, up to 10 rides), Professional ($12/week for Beta Founding Members or $15/week after beta launch, 0% commission, unlimited rides), or Elite ($28/week for Beta Founding Members or $35/week after beta launch, 0% commission, fleet features). Beta Founding Members lock in their pricing FOREVER. You can cancel anytime with no penalties and keep all client contact information.",
     },
     {
-      question: "Is RideshareGuides a rideshare company?",
+      question: "Is The Don Reservations a rideshare company?",
       answer:
         "No. We're a B2B software platform that provides booking tools for independent transportation providers. We don't provide rides, employ drivers, or take commission. You're an independent business owner using our software to manage your bookings.",
     },
     {
       question: "How many bookings do I need to break even?",
       answer:
-        "At $15/week, you break even with just ONE direct booking instead of an Uber ride. Example: A $50 Uber ride where you'd keep $35 (after 30% fee) vs. keeping the full $50 direct. That $15 difference covers your weekly subscription. Every booking after that is pure profit.",
-    },
-    {
-      question: "Can riders book me without downloading an app?",
-      answer:
-        "Yes! Riders book through a simple web link - no app download required. They just click your link, enter pickup/dropoff details, and submit. You get a notification and can accept or decline. It's friction-free for both sides.",
+        "With Professional tier at $12-15/week, you break even with just ONE direct booking instead of an Uber ride. Example: A $50 Uber ride where you'd keep $35 (after 30% fee) vs. keeping full $50 direct. That $15 difference covers your weekly subscription. Every booking after that is pure profit. FREE tier starts earning immediately with just 1-2 rides per month.",
     },
   ];
 

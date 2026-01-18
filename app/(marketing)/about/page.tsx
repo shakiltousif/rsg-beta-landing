@@ -85,7 +85,7 @@ export default function AboutPage() {
                   </div>
                   <h3 className="mb-2 text-xl font-bold">Transparent Pricing</h3>
                   <p className="text-slate-400">
-                    $15/week, flat. No hidden fees, no commission cuts, no surprises. What you earn is yours to keep.
+                    FREE tier with 12% commission, or Professional tier at $12-15/week with 0% commission. No hidden fees, no surprises. What you earn is yours to keep.
                   </p>
                 </div>
 
