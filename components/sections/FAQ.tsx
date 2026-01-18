@@ -7,6 +7,11 @@ export default function FAQ() {
 
   const faqs = [
     {
+      question: "Why should I become a member of rideshareguides.com and use their reservations system, The Don Reservations aka The Driver Owned Network reservations system!?",
+      answer:
+        "List your transportation business in RSG global digital drivers directory and start building your own client base today. To access The Don Reservations system and get your RSG digital business card, you must be a member of RideshareGuides.com—the only social media platform built exclusively for gig workers and independent contractors worldwide. Membership is always free to join, and once you're in, you can create your professional RSG digital business card that will be featured in our searchable directory where riders in your local city can discover you. Your card showcases your services while providing riders with your exclusive The Don Reservations personal driver ID #, enabling them to book you directly using the same proven technology as Uber and Lyft apps—except you keep 100% of your fares while building lasting relationships with clients who want YOU as their dedicated driver.",
+    },
+    {
       question: "Do I need a TLC license to join?",
       answer:
         "Yes, you need either a NYC TLC license, Black Car/Livery license, or county-level commercial license (Florida, California, etc.). We verify all licenses during signup to ensure rider safety and legal compliance.",
@@ -50,11 +55,6 @@ export default function FAQ() {
       question: "Is RideshareGuides a rideshare company?",
       answer:
         "RideshareGuides isn't a rideshare company—it's RSG Network, a professional driver's platform. We're a community where serious drivers connect, strategize, and elevate their game. But here's what sets us apart: RSG members get exclusive access to The Don Reservations, driver-owned network reservation system. This is for pros who want to build a real transportation business, not just chase pings.",
-    },
-    {
-      question: "How many bookings do I need to break even?",
-      answer:
-        "With Professional tier at $12-15/week, you break even with just ONE direct booking instead of an Uber ride. Example: A $50 Uber ride where you'd keep $35 (after 30% fee) vs. keeping full $50 direct. That $15 difference covers your weekly subscription. Every booking after that is pure profit. FREE tier starts earning immediately with just 1-2 rides per month.",
     },
     {
       question: "How many bookings do I need to break even?",

@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Hero from "@/components/sections/Hero";
+import BetaOffer from "@/components/sections/BetaOffer";
 import ProblemSolution from "@/components/sections/ProblemSolution";
 import Features from "@/components/sections/Features";
 import HowItWorks from "@/components/sections/HowItWorks";
@@ -63,6 +64,7 @@ export default function LandingPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <Hero />
+      <BetaOffer />
       <ProblemSolution />
       <Features />
       <HowItWorks />
